@@ -40,7 +40,7 @@ definePackage("xebia.blog", function(pkg) {
         },
 
         parse : function(response) {
-            // TODO : parse dates using moment ?
+            // need to parse dates using moment ?
             return response;
         }
 
@@ -62,11 +62,35 @@ definePackage("xebia.blog", function(pkg) {
     });
 
     pkg.BlogArticleView = Backbone.View.extend({
-        // TODO
+
+        className : "blog-article",
+
+        render : function() {
+            this.$el.empty();
+            this.ui = {};
+            this.ui.title = $("<h3>").html(this.model.get("title")).appendTo(this.$el);
+            this.ui.excerpt = $("<p>").addClass("excerpt").html(this.model.get("excerpt")).appendTo(this.$el);
+        }
+
     });
 
     pkg.BlogArticleCollectionView = Backbone.View.extend({
-        // TODO
+
+        className : "blog-articles clearfix",
+
+        initialize : function() {
+            this.listenTo(this.collection, "sync", this.render, this);
+        },
+
+        render : function() {
+            this.$el.empty();
+            this.collection.each(function(video) {
+                var view = new pkg.BlogArticleView({model : video});
+                view.$el.appendTo(this.$el);
+                view.render();
+            }, this);
+        }
+
     });
 
 

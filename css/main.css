@@ -1,6 +1,35 @@
 
+.clearfix::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/* videos */
 
 .vimeo-video {
     float: left;
     margin-right: 10px;
+}
+
+/* articles */
+
+.blog-articles {
+
+}
+
+.blog-article {
+    margin-bottom: 10px;
+}
+
+.blog-article h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.blog-article .excerpt {
+
 }

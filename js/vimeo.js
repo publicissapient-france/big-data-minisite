@@ -59,7 +59,7 @@ definePackage("xebia.vimeo", function(pkg) {
 
     pkg.VimeoVideoCollectionView = Backbone.View.extend({
 
-        className : "vimeo-videos",
+        className : "vimeo-videos clearfix",
 
         initialize : function() {
             this.listenTo(this.collection, "sync", this.render, this);
