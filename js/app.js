@@ -13,6 +13,9 @@ definePackage("xebia", function(pkg) {
             this.videos = new pkg.vimeo.VimeoVideoCollection();
             this.videos.fetch();
 
+            this.videosView = new pkg.vimeo.VimeoVideoCollectionView({collection : this.videos});
+            this.videosView.$el.appendTo($("#container"));
+
             this.articles = new pkg.blog.BlockArticleCollection();
             this.articles.fetch();
         }

@@ -39,11 +39,41 @@ definePackage("xebia.vimeo", function(pkg) {
     });
 
     pkg.VimeoVideoView = Backbone.View.extend({
-        // TODO
+
+        className : "vimeo-video",
+
+        render : function() {
+            this.$el.empty();
+            this.ui = {};
+            var playerUrl = "http://player.vimeo.com/video/" + this.model.get("id");
+            this.ui.iframe = $("<iframe>") // webkitAllowFullScreen mozallowfullscreen allowFullScreen
+                .attr({
+                    src     : playerUrl,
+                    width   : 200,
+                    height  : 200,
+                    frameborder : "0"
+                })
+                .appendTo(this.$el);
+        }
     });
 
     pkg.VimeoVideoCollectionView = Backbone.View.extend({
-        // TODO
+
+        className : "vimeo-videos",
+
+        initialize : function() {
+            this.listenTo(this.collection, "sync", this.render, this);
+        },
+
+        render : function() {
+            this.$el.empty();
+            this.collection.each(function(video) {
+                var view = new pkg.VimeoVideoView({model : video});
+                view.$el.appendTo(this.$el);
+                view.render();
+            }, this);
+        }
+
     });
 
 });
