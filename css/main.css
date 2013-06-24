@@ -20,6 +20,14 @@ h2 {
     position: relative;
 }
 
+.clearfix::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
 /* top navigation */
 
 .nav {
@@ -60,13 +68,10 @@ h2 {
 
 /* step 1 : hello */
 
-/* Colors */
-/* Hello http://essentials.xebia.com/make-it-visible */
 .hello {
     background: url('../images/hello-bg.png') repeat-x;
     margin-top: 25px;
     position: relative;
-    /* http://en.wikipedia.org/wiki/Icosahedron */
 
 }
 .hello .hello-line {
@@ -80,7 +85,7 @@ h2 {
 }
 .hello .hello-content {
     width: 1100px;
-    height: 700px;
+    height: 670px;
     margin: auto;
     position: relative;
 }
@@ -115,8 +120,7 @@ h2 {
     position: absolute;
     top: 300px;
     right: 0px;
-    background: url('../images/icosahedron.png') bottom right no-repeat;
-    background-color: #f1f0ee;
+    background: white url('../images/icosahedron.png') bottom right no-repeat;
 }
 .hello .hello-content .hello-content-icosahedron {
     position: absolute;
@@ -148,15 +152,43 @@ h2 {
 
 
 
+/* our offer */
 
-/* cleafix hack */
-.clearfix::after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+
+.our-offer {
+    background-color: #f0efed;
 }
+
+.our-offer .our-offer-content {
+    margin: auto;
+    height: 100%;
+    width: 1000px;
+    position: relative;
+}
+
+.our-offer .our-offer-content h2 {
+    padding: 20px 0px;
+    font-size: 42px;
+}
+
+.our-offer .our-offer-content p {
+    padding: 0px 50px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.our-offer .our-offer-content .our-offer-subcontent {
+    margin: auto;
+    width: 695px;
+}
+
+.our-offer-monetize {
+    height: 130px;
+    background: transparent url(../images/our-offer-monetize.png) no-repeat top center;
+}
+
+
+
 
 /* our-videos */
 
