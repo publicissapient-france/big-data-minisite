@@ -206,9 +206,26 @@ h2 {
     background: transparent url(../images/our-offer-monetize.png) no-repeat top center;
 }
 
-/* case study */
+/* our formations */
 
-/* case-study-bg.png */
+.our-formations .formations {
+    width: 700px;
+    margin: 0px auto 50px;
+}
+
+.our-formations .formations h4 {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+/* formations */
+
+
+/* case study */
 
 .case-study {
     background: transparent url(../images/case-study-bg.png) repeat top left;

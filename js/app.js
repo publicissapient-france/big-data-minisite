@@ -21,6 +21,18 @@ definePackage("xebia", function(pkg) {
 
             var articlesView = new pkg.blog.BlogArticleCollectionView({collection: articles});
             articlesView.$el.appendTo($("#our-articles .articles-container"));
+
+
+            $('.our-formations .flexslider').flexslider({
+                animation: "slide",
+                animationLoop: false,
+                directionNav: true,
+                itemWidth: 700,
+                itemMargin: 0,
+                minItems: 1,
+                maxItems: 1
+            });
+
         }
 
     });
