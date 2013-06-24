@@ -22,6 +22,9 @@ definePackage("xebia", function(pkg) {
             var articlesView = new pkg.blog.BlogArticleCollectionView({collection: articles});
             articlesView.$el.appendTo($("#our-articles .articles-container"));
 
+            var navView = new pkg.nav.NavView();
+
+
 
             $('.our-formations .flexslider').flexslider({
                 animation: "slide",
