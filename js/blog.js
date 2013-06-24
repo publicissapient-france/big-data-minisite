@@ -84,7 +84,7 @@ definePackage("xebia.blog", function(pkg) {
 
         render : function() {
             this.$el.empty();
-            this.collection.each(function(video) {
+            _.each(this.collection.first(3), function(video) {
                 var view = new pkg.BlogArticleView({model : video});
                 view.$el.appendTo(this.$el);
                 view.render();

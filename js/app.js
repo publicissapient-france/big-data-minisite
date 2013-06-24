@@ -20,7 +20,7 @@ definePackage("xebia", function(pkg) {
             articles.fetch();
 
             var articlesView = new pkg.blog.BlogArticleCollectionView({collection: articles});
-            articlesView.$el.appendTo($("#our-articles"));
+            articlesView.$el.appendTo($("#our-articles .articles-container"));
         }
 
     });

@@ -124,29 +124,8 @@ h2 {
     visibility: hidden;
 }
 
-/* articles */
-
-.blog-articles {
-
-}
-
-.blog-article {
-    margin-bottom: 10px;
-}
-
-.blog-article h3 {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.blog-article .excerpt {
-
-}
-
-
 /* our-videos */
-/* Colors */
-/* Contact http://essentials.xebia.com/rich-communication */
+
 .our-videos {
     background: url('../images/contact-flare.jpg') no-repeat top right #44093b;
     width: 100%;
@@ -197,6 +176,61 @@ h2 {
     text-decoration: underline;
 }
 
+/* our articles */
+
+.our-articles {
+    padding: 10px 0px;
+    position: relative;
+    overflow-x: hidden;
+}
+.our-articles .work-boids {
+    position: absolute;
+    top: 55px;
+    right: -30px;
+    width: 217px;
+    height: 239px;
+    background: url('../images/work-boids.png') no-repeat;
+}
+.our-articles .work-content {
+    margin: auto;
+    height: 500px;
+    width: 1000px;
+    position: relative;
+}
+
+.our-articles .work-content h2 {
+    margin-bottom: 10px;
+}
+
+.our-articles .blog-articles {
+
+}
+
+.our-articles .blog-article {
+    margin-bottom: 10px;
+}
+
+.our-articles .blog-article h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.our-articles .blog-article .excerpt {
+
+}
+
+.our-articles .see-more-articles {
+    color: #6a205f;
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    font-size: 36px;
+}
+
+.our-articles .see-more-articles:hover {
+    text-decoration: underline;
+}
 
 /* social links */
 .social {
