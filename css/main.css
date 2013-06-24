@@ -1,18 +1,127 @@
+/* global styles */
+body {
+    margin: 0px;
+    min-width: 1100px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    opacity: 0.9;
+}
+h2 {
+    color: #6a205f;
+    font: 65px 'UbuntuLight', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.content {
+    font: 18px 'UbuntuMedium', Arial, sans-serif;
+    width: 100%;
+    position: relative;
+}
 
+/* top navigation */
+
+.nav {
+    width: 100%;
+    height: 35px;
+    top: 0px;
+    vertical-align: middle;
+    text-align: center;
+    position: fixed;
+    z-index: 20;
+    background-color: white;
+    border-bottom: 5px solid #bebab8;
+    -webkit-box-shadow: 0px 0px 7px 0px #999;
+    box-shadow: 0px 0px 7px 0px #999;
+}
+.nav .nav-content {
+    width: 1000px;
+    height: 30px;
+    margin: auto;
+    position: relative;
+}
+.nav .nav-content a {
+    font: 15px 'UbuntuMedium', Arial, sans-serif;
+    color: #6a205f;
+    text-transform: uppercase;
+    margin: 0px 15px;
+    line-height: 35px;
+}
+.nav .nav-content .pointer {
+    width: 13px;
+    height: 7px;
+    position: absolute;
+    top: 28px;
+    left: 150px;
+    background: url('../images/nav-pointer.png') no-repeat;
+}
+
+
+/* step 1 : hello */
+
+/* Colors */
+/* Hello http://essentials.xebia.com/make-it-visible */
+.hello {
+    background: url('../images/hello-bg.png') repeat-x;
+    margin-top: 25px;
+    position: relative;
+    /* http://en.wikipedia.org/wiki/Icosahedron */
+
+}
+.hello .hello-line {
+    position: absolute;
+    top: 293px;
+    left: 0px;
+    width: 100%;
+    height: 7px;
+    background: url('../images/hello-hr.png') repeat-x;
+    z-index: 5;
+}
+.hello .hello-content {
+    width: 1100px;
+    height: 700px;
+    margin: auto;
+    position: relative;
+}
+.hello .hello-content h2 {
+    position: absolute;
+    top: 45px;
+    left: 90px;
+    margin: 0px;
+}
+
+
+.hello .hello-content .hello-laptop {
+    width: 364px;
+    height: 293px;
+    position: absolute;
+    top: 250px;
+    left: 47px;
+    background: url('../images/hello-laptop.png') no-repeat;
+    z-index: 5;
+}
+.hello .icosahedron {
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    background: url('../images/icosahedron.png') bottom right no-repeat;
+    background-color: #f1f0ee;
+}
+
+
+
+
+
+/* cleafix hack */
 .clearfix::after {
     content: ".";
     display: block;
     height: 0;
     clear: both;
     visibility: hidden;
-}
-
-
-/* videos */
-
-.vimeo-video {
-    float: left;
-    margin-right: 10px;
 }
 
 /* articles */
@@ -32,4 +141,113 @@
 
 .blog-article .excerpt {
 
+}
+
+
+/* our-videos */
+/* Colors */
+/* Contact http://essentials.xebia.com/rich-communication */
+.our-videos {
+    background: url('../images/contact-flare.jpg') no-repeat top right #44093b;
+    width: 100%;
+    height: 600px;
+    padding: 0px;
+    position: relative;
+}
+.our-videos .pattern {
+    height: 100%;
+    background: transparent url('../images/contact-bg.png') repeat;
+}
+.our-videos .contact-content {
+    margin: auto;
+    height: 100%;
+    width: 1000px;
+    position: relative;
+    z-index: 9;
+}
+.our-videos .contact-content h2 {
+    color: white;
+    line-height: 100px;
+    margin: 30px 10px 20px 10px;
+}
+.our-videos .contact-illustration {
+    width: 691px;
+    height: 218px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: url('../images/contact-illustration.png') no-repeat;
+}
+
+.our-videos .vimeo-video {
+    float: left;
+    width: 49%;
+    text-align: center;
+}
+
+.our-videos .see-more-videos {
+    color: white;
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    font-size: 36px;
+}
+
+.our-videos .see-more-videos:hover {
+    text-decoration: underline;
+}
+
+
+/* social links */
+.social {
+    background-color: #d7d5d0;
+    width: 880px;
+    height: 60px;
+    clear: both;
+    margin: auto;
+    position: relative;
+}
+.social a {
+    position: absolute;
+    display: block;
+}
+.social .work-twitter {
+    top: 13px;
+    left: 50px;
+    width: 140px;
+    height: 35px;
+    background: url('../images/work-twitter.png') no-repeat;
+}
+.social .work-viadeo {
+    top: 13px;
+    left: 300px;
+    width: 140px;
+    height: 35px;
+    background: url('../images/work-viadeo.png') no-repeat;
+}
+.social .work-googleplus {
+    top: 15px;
+    left: 500px;
+    width: 140px;
+    height: 40px;
+    background: url('../images/work-googleplus.png') no-repeat;
+}
+.social .work-linkedin {
+    top: 12px;
+    left: 700px;
+    width: 140px;
+    height: 35px;
+    background: url('../images/work-linkedin.png') no-repeat;
+}
+
+/* footer */
+
+.footer {
+    background-color: #f1f0ee;
+    height: 80px;
+}
+
+.footer .tagline {
+    height: 80px;
+    background: url('../images/footer-tagline.png') 0px 20px no-repeat #f1f0ee;
 }

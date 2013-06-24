@@ -14,13 +14,13 @@ definePackage("xebia", function(pkg) {
             videos.fetch();
 
             var videosView = new pkg.vimeo.VimeoVideoCollectionView({collection : videos});
-            videosView.$el.appendTo($("#container"));
+            videosView.$el.appendTo($("#our-videos .videos-container"));
 
             var articles = new pkg.blog.BlockArticleCollection();
             articles.fetch();
 
             var articlesView = new pkg.blog.BlogArticleCollectionView({collection: articles});
-            articlesView.$el.appendTo($("#container"));
+            articlesView.$el.appendTo($("#our-articles"));
         }
 
     });
