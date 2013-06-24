@@ -265,6 +265,7 @@ h2 {
     text-transform: uppercase;
     margin-top: 20px;
     padding: 5px 10px;
+    color: #FFFFFF;
 
 }
 
@@ -284,7 +285,6 @@ h2 {
 .our-videos {
     background: url('../images/contact-flare.jpg') no-repeat top right #44093b;
     width: 100%;
-    height: 600px;
     padding: 0px;
     position: relative;
 }
@@ -292,27 +292,13 @@ h2 {
     height: 100%;
     background: transparent url('../images/contact-bg.png') repeat;
 }
-.our-videos .contact-content {
-    margin: auto;
-    height: 100%;
-    width: 1000px;
-    position: relative;
-    z-index: 9;
+.our-videos .section-content {
+    margin-bottom: 70px;
+    z-index: 2;
 }
-.our-videos .contact-content h2 {
+.our-videos .section-content h2 {
     color: white;
-    line-height: 100px;
-    margin: 30px 10px 20px 10px;
 }
-.our-videos .contact-illustration {
-    width: 691px;
-    height: 218px;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    background: url('../images/contact-illustration.png') no-repeat;
-}
-
 .our-videos .vimeo-video {
     float: left;
     width: 49%;
@@ -320,15 +306,25 @@ h2 {
 }
 
 .our-videos .see-more-videos {
-    color: white;
-    position: absolute;
-    right: 20px;
-    bottom: 50px;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
     font-size: 36px;
+    color: white;
+    margin-top: 30px;
 }
 
 .our-videos .see-more-videos:hover {
     text-decoration: underline;
+}
+
+.our-videos .contact-illustration {
+    width: 691px;
+    height: 218px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: url('../images/contact-illustration.png') no-repeat;
 }
 
 /* our articles */
@@ -346,20 +342,8 @@ h2 {
     height: 239px;
     background: url('../images/work-boids.png') no-repeat;
 }
-.our-articles .work-content {
-    margin: auto;
-    height: 500px;
-    width: 1000px;
-    position: relative;
-}
 
-.our-articles .work-content h2 {
-    margin-bottom: 10px;
-}
 
-.our-articles .blog-articles {
-
-}
 
 .our-articles .blog-article {
     margin-bottom: 10px;
@@ -376,8 +360,10 @@ h2 {
 }
 
 .our-articles .see-more-articles {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
     color: #6a205f;
-    position: absolute;
     right: 20px;
     bottom: 50px;
     font-size: 36px;
@@ -393,7 +379,7 @@ h2 {
     width: 880px;
     height: 60px;
     clear: both;
-    margin: auto;
+    margin: 0px auto 30px;
     position: relative;
 }
 .social a {
