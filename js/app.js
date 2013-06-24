@@ -28,9 +28,10 @@ definePackage("xebia", function(pkg) {
 
             $('.our-formations .flexslider').flexslider({
                 animation: "slide",
-                animationLoop: false,
-                directionNav: true,
+                animationLoop: true,
+                directionNav: false,
                 itemWidth: 700,
+                slideshowSpeed: 5000,
                 itemMargin: 0,
                 minItems: 1,
                 maxItems: 1

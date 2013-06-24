@@ -13,11 +13,11 @@ a:hover {
 }
 h2 {
     color: #6a205f;
-    font: 65px 'UbuntuLight', Arial, sans-serif;
+    font: 65px 'UbuntuRegular', Arial, sans-serif;
     text-transform: uppercase;
 }
 #content {
-    font: 18px 'UbuntuMedium', Arial, sans-serif;
+    font: 18px 'UbuntuRegular', Arial, sans-serif;
     width: 100%;
     position: relative;
 }
@@ -52,7 +52,7 @@ h2 {
     position: relative;
 }
 .nav .nav-content a {
-    font: 15px 'UbuntuMedium', Arial, sans-serif;
+    font: 15px 'UbuntuRegular', Arial, sans-serif;
     color: #6a205f;
     text-transform: uppercase;
     margin: 0px 15px;
@@ -224,8 +224,6 @@ h2 {
     margin-bottom: 8px;
 }
 
-/* formations */
-
 
 /* case study */
 
@@ -265,7 +263,7 @@ h2 {
     display: inline-block;
     background-color: #31a4c3;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 5px;
     padding: 5px 10px;
     color: #FFFFFF;
 
@@ -275,8 +273,15 @@ h2 {
 
 }
 
-/*  */
+/*  partners */
 
+.our-partners .image-container {
+    text-align: center;
+}
+
+.our-partners .partners-img {
+    width: 600px;
+}
 
 
 
