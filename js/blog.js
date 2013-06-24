@@ -68,8 +68,9 @@ definePackage("xebia.blog", function(pkg) {
         render : function() {
             this.$el.empty();
             this.ui = {};
-            this.ui.title = $("<h3>").html(this.model.get("title")).appendTo(this.$el);
-            this.ui.excerpt = $("<p>").addClass("excerpt").html(this.model.get("excerpt")).appendTo(this.$el);
+            this.ui.link = $("<a>").attr("href", this.model.get("url")).appendTo(this.$el);
+            this.ui.title = $("<h3>").html(this.model.get("title")).appendTo(this.ui.link);
+            this.ui.excerpt = $("<p>").addClass("excerpt").html(this.model.get("excerpt")).appendTo(this.ui.link);
         }
 
     });

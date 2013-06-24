@@ -275,6 +275,10 @@ h2 {
 
 /*  partners */
 
+.our-partners {
+    /*background: #e1e3e7 url(../images/contact-bg.png) repeat top left;*/
+}
+
 .our-partners .image-container {
     text-align: center;
 }
@@ -356,14 +360,25 @@ h2 {
     margin-bottom: 10px;
 }
 
+.our-articles .blog-article a {
+    display: block;
+}
+
+.our-articles .blog-article a:hover {
+
+    background-color: rgba(220, 220, 220, 0.5);
+}
+
+
 .our-articles .blog-article h3 {
+    color: #6d626b;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .our-articles .blog-article .excerpt {
-
+    color: #6d626b;
 }
 
 .our-articles .see-more-articles {
@@ -430,6 +445,8 @@ h2 {
 }
 
 .footer .tagline {
+    width: 1000px;
+    margin: auto;
     height: 80px;
     background: url('../images/footer-tagline.png') 0px 20px no-repeat #f1f0ee;
 }
