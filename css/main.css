@@ -304,7 +304,7 @@ h2 {
     background: transparent url('../images/contact-bg.png') repeat;
 }
 .our-videos .section-content {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     z-index: 2;
 }
 .our-videos .section-content h2 {
@@ -314,6 +314,7 @@ h2 {
     float: left;
     width: 49%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .our-videos .see-more-videos {
@@ -322,7 +323,7 @@ h2 {
     text-align: right;
     font-size: 36px;
     color: white;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .our-videos .see-more-videos:hover {
@@ -345,6 +346,11 @@ h2 {
     position: relative;
     overflow-x: hidden;
 }
+
+.our-articles .section-content {
+    margin-bottom: 40px;
+}
+
 .our-articles .work-boids {
     position: absolute;
     top: 55px;
@@ -365,7 +371,6 @@ h2 {
 }
 
 .our-articles .blog-article a:hover {
-
     background-color: rgba(220, 220, 220, 0.5);
 }
 

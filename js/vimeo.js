@@ -67,7 +67,7 @@ definePackage("xebia.vimeo", function(pkg) {
 
         render : function() {
             this.$el.empty();
-            _.each(this.collection.first(2), function(video) {
+            _.each(this.collection.first(4), function(video) {
                 var view = new pkg.VimeoVideoView({model : video});
                 view.$el.appendTo(this.$el);
                 view.render();
