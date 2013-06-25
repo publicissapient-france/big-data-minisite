@@ -11,7 +11,7 @@ a {
 a:hover {
     opacity: 0.9;
 }
-h2 {
+h1, h2 {
     color: #6a205f;
     font: 65px 'UbuntuRegular', Arial, sans-serif;
     text-transform: uppercase;
@@ -161,13 +161,14 @@ h2 {
     z-index: 10;
 }
 
-.hello .big-data-intro h2 {
+.hello .big-data-intro h1 {
     position: static;
+    margin-bottom: 10px;
 }
 
 .hello .big-data-intro p {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 30px;
     text-align: justify;
 }
 
@@ -193,9 +194,10 @@ h2 {
 }
 
 .our-offer .our-offer-content p {
-    padding: 0px 50px;
+    padding: 0px 15px;
     text-align: justify;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 30px;
 }
 
 .our-offer .our-offer-content .our-offer-subcontent {
@@ -363,7 +365,7 @@ h2 {
 
 
 .our-articles .blog-article {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .our-articles .blog-article a {
@@ -384,6 +386,8 @@ h2 {
 
 .our-articles .blog-article .excerpt {
     color: #6d626b;
+    font-size: 16px;
+    line-height: 30px;
     text-align: justify;
 }
 
