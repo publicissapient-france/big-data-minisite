@@ -23,11 +23,8 @@ definePackage("xebia.nav", function(pkg) {
                 var target = $(navLink.attr("href"));
                 var offsetTop = target.offset().top - 50;
                 if(scrollTop>offsetTop) {
-                    var navCenter = navLink.position().left + (navLink.width() / 2);
+                    var navCenter = navLink.position().left + (navLink.width() / 2) + (this.pointer.width() / 2) + 1;
                     this.pointer.animate({left: navCenter + "px"}, 300);
-
-                    console.log("scrolled to " + navLink.attr("href"), navCenter)
-
                     break;
                 }
             }
