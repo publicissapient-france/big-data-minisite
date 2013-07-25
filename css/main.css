@@ -408,7 +408,7 @@ h1, h2 {
 /* social links */
 .social {
     background-color: #d7d5d0;
-    width: 880px;
+    width: 1000px;
     height: 60px;
     clear: both;
     margin: 0px auto 30px;
@@ -420,28 +420,28 @@ h1, h2 {
 }
 .social .work-twitter {
     top: 13px;
-    left: 50px;
+    left: 85px;
     width: 140px;
     height: 35px;
     background: url('../images/work-twitter.png') no-repeat;
 }
 .social .work-viadeo {
     top: 13px;
-    left: 300px;
+    left: 315px;
     width: 140px;
     height: 35px;
     background: url('../images/work-viadeo.png') no-repeat;
 }
 .social .work-googleplus {
     top: 15px;
-    left: 500px;
+    left: 550px;
     width: 140px;
     height: 40px;
     background: url('../images/work-googleplus.png') no-repeat;
 }
 .social .work-linkedin {
     top: 12px;
-    left: 700px;
+    left: 760px;
     width: 140px;
     height: 35px;
     background: url('../images/work-linkedin.png') no-repeat;
