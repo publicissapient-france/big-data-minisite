@@ -71,6 +71,9 @@ definePackage("xebia.blog", function(pkg) {
             this.ui.link = $("<a>").attr("href", this.model.get("url")).appendTo(this.$el);
             this.ui.title = $("<h3>").html(this.model.get("title")).appendTo(this.ui.link);
             this.ui.excerpt = $("<p>").addClass("excerpt").html(this.model.get("excerpt")).appendTo(this.ui.link);
+            if(!this.options.last) {
+                this.ui.separator = $("<div>").addClass("separator").appendTo(this.$el);
+            }
         }
 
     });
@@ -85,8 +88,9 @@ definePackage("xebia.blog", function(pkg) {
 
         render : function() {
             this.$el.empty();
-            _.each(this.collection.first(5), function(video) {
-                var view = new pkg.BlogArticleView({model : video});
+            var firsts = this.collection.first(5);
+            _.each(firsts, function(video, i) {
+                var view = new pkg.BlogArticleView({model : video, last : i==firsts.length-1});
                 view.$el.appendTo(this.$el);
                 view.render();
             }, this);
