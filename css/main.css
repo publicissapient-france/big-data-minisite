@@ -442,6 +442,13 @@ h1, h2 {
     text-align: justify;
 }
 
+.our-articles .blog-article .separator {
+    width: 50%;
+    height: 1px;
+    background-color: #d7d5d0;
+    margin: 0px auto;
+}
+
 .our-articles .see-more-articles {
     display: inline-block;
     width: 100%;
