@@ -509,12 +509,44 @@ h1, h2 {
 
 .footer {
     background-color: #f1f0ee;
-    height: 80px;
+    height: 180px;
 }
 
 .footer .tagline {
-    width: 1000px;
+    width: 462px;
     margin: auto;
-    height: 80px;
-    background: url('../images/footer-tagline.png') 0px 20px no-repeat #f1f0ee;
+    height: 170px;
+    background: url('../images/footer-alliance.png') 0px 20px no-repeat #f1f0ee;
+}
+.footer .tagline-xebia {
+    width: 462px;
+    margin: auto;
+    height: 111px;
+    background: url('../images/footer-logo-xebia.png') 0px 20px no-repeat #f1f0ee;
+}
+.footer .tagline-alliance {
+    width: 446px;
+    margin: auto;
+    height: 47px;
+    border-top: 1px solid #bebab8;
+}
+.footer .tagline-alliance p{
+    text-transform: uppercase;
+    line-height: 30px;
+    text-align: justify;
+    float: left;
+    margin-left: 7px;
+    margin-top: 16px;
+    font: 13px 'UbuntuRegular', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+.footer .tagline-alliance a{
+   color: #6d626b;
+}
+.footer .tagline-alliance a:hover{
+   text-decoration: underline;
+}
+.logo-alliance {
+    margin-top: 10px;
+    float: left;
 }
